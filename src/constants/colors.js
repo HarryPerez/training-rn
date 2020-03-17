@@ -1,1 +1,2 @@
-export const polar = '#EAF6FA';
+export const lightBlue = '#EAF6FA';
+export const white = '#FFF';

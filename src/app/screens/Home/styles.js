@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
 
-import {polar} from '../../../constants/colors';
+import {lightBlue} from '../../../constants/colors';
 
 export default StyleSheet.create({
   homeContainer: {
-    backgroundColor: polar,
+    backgroundColor: lightBlue,
+    marginTop: 50,
   },
 });
