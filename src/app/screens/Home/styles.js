@@ -1,10 +1,10 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import {lightBlue} from '../../../constants/colors';
+import { lightBlue } from '../../../constants/colors';
 
 export default StyleSheet.create({
   homeContainer: {
     backgroundColor: lightBlue,
-    marginTop: 50,
-  },
+    marginTop: 30
+  }
 });

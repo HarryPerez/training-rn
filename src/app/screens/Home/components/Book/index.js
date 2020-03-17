@@ -1,16 +1,16 @@
 import React from 'react';
-import {View, Image, Text} from 'react-native';
+import { View, Image, Text } from 'react-native';
 
 import styles from './styles';
 
-function Book({props}) {
-  const {image_url: imageUrl, author, title} = props;
+function Book({ props }) {
+  const { image_url: imageUrl, author, title } = props;
   return (
     <View style={styles.bookContainer}>
       <View style={styles.bookInfoContainer}>
         <Image
           source={{
-            uri: imageUrl,
+            uri: imageUrl
           }}
           style={styles.bookImage}
         />

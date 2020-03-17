@@ -7,11 +7,16 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
-    "postinstall": "jetifier -r"
+    "lint": "eslint src",
+    "lint-fix": "eslint src --fix"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.7",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-wolox-react-native": "^1.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.6.0",
