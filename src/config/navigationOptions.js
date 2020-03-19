@@ -3,6 +3,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import { lightBlue, white } from '../constants/colors';
 
+import IconTab from '../app/components/IconTab';
 import headerBackground from '../assets/general/bc_nav_bar.png';
 import back from '../assets/navigation_bar/ic_back.png';
 
@@ -31,3 +32,10 @@ export const navigationOptions = {
   defaultNavigationOptions: navigationOptionsStyle,
   headerTitleAlign: 'center'
 };
+
+export const defaultNavigationOptionsTab = ({ navigation }) => ({
+  tabBarIcon: ({ focused }) => {
+    const { routeName } = navigation.state;
+    return <IconTab route={routeName} focused={focused} />;
+  }
+});
