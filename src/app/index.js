@@ -9,6 +9,7 @@ import { navigationOptions, defaultNavigationOptionsTab } from '../config/naviga
 import Login from './screens/Login';
 import Home from './screens/Home';
 import BookDetail from './screens/BookDetail';
+import Settings from './screens/Settings';
 
 const App: () => React$Node = () => {
   return <Home />;
@@ -29,7 +30,7 @@ const HomeNavigator = createStackNavigator(
 const TabNavigator = createBottomTabNavigator(
   {
     Home: HomeNavigator,
-    Settings: BookDetail
+    Settings
   },
   {
     defaultNavigationOptions: defaultNavigationOptionsTab
